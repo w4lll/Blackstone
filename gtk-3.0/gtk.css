@@ -140,7 +140,7 @@ entry {
   entry.search {
     border-radius: 4px; }
   entry image {
-    color: rgba(63, 63, 63, 0.896); }
+    color: #ffffff; }
     entry image.left {
       padding-left: 0;
       padding-right: 5px; }
