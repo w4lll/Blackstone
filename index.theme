@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Blackstone
+Comment=custom theme
+
+[X-GNOME-Metatheme]
+GtkTheme=Blackstone
+MetacityTheme=Blackstone
+IconTheme=Tango2-mod
+CursorTheme=mate-black
+ButtonLayout=:minimize,maximize,close
+
+[Settings]
+gtk-theme-name=Blackstone
+gtk-application-prefer-dark-theme = true
