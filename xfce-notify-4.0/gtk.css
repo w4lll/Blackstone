@@ -1,0 +1,21 @@
+#XfceNotifyWindow {
+    background-image: linear-gradient(to bottom, #202020, #101010);
+    color: #fcfcfc;
+    border: 1px solid #000000;
+    box-shadow: 0 0 0 1px #404040 inset;
+    border-radius: 6px;
+}
+
+#XfceNotifyWindow button label {
+    color: #ffffff;
+}
+
+#XfceNotifyWindow label#summary {
+    color: #ffffff;
+    font-size: 12pt;
+    margin-bottom: 2px;
+}
+
+#XfceNotifyWindow label#body {
+    color: #c0c0c0;
+}
