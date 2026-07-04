@@ -10,4 +10,22 @@ A dark GTK theme with some gradients, using Mint-Y as a base theme.
 - GTK 4
 
 ## Installation
-Manually clone the theme and put the folder to `~/.themes/`.
+Clone the git and copy the folder to:
+- User: `~/.themes/`
+- System: `/usr/share/themes`
+
+## Toolkit Previews
+> [!NOTE]
+> Using the font `Inter 10pt` and my own icon theme `Tango-extra` (mainly title bar icons on CSDs) for this preview. Title bar icons may fall back to generic `hicolor` icons.
+
+A widget factory (GTK 2)
+
+<img src="./preview/awf-gtk2.png">
+
+GTK 3 Widget Factory
+
+<img src="./preview/gtk3-widget-factory.png">
+
+GTK 4 Widget Factory
+
+<img src="./preview/gtk4-widget-factory.png">
