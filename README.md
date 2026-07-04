@@ -1,8 +1,8 @@
 # Blackstone
 A dark GTK theme with some gradients, using Mint-Y as a base theme.
 
-<img width="1366" height="768" alt="Theme preview with a bit of modified panel look." src="./preview/preview2.png" />
-(Using tweaked `~/.config/gtk-3.0/gtk.css` for the panel.)
+<img src="./preview/preview2.png" />
+(Using tweaked ~/.config/gtk-3.0/gtk.css for the panel.)
 
 ## Toolkits
 - GTK Murrine Engine
@@ -16,7 +16,9 @@ Clone the git and copy the folder to:
 
 ## Toolkit Previews
 > [!NOTE]
-> Using the font `Inter 10pt` and my own icon theme `Tango-extra` (mainly title bar icons on CSDs) for this preview. Title bar icons may fall back to generic `hicolor` icons.
+> - The image previews you're seeing is using the font `Inter 10pt` and my own icon theme `Tango-extra` (mainly title bar icons on CSDs) for this preview. Title bar icons may fall back to generic `hicolor` icons or whatever the currently applied icon theme.
+> - This GTK 2 theme came from this "pre-rewrite/legacy" theme and now it's in "maintenance" state, where it only needs fixing when an element has unreadable spot.
+> - "Blackstone-dark" is just a link to the "Blackstone" theme, fixing the color schemes on libadwaita applications on my main machine.
 
 A widget factory (GTK 2)
 
