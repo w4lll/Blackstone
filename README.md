@@ -12,7 +12,7 @@ A dark GTK theme with some gradients, using Mint-Y as a base theme.
 ## Installation
 Clone the git and copy the folder to:
 - User: `~/.themes/`
-- System: `/usr/share/themes`
+- System: `/usr/share/themes/`
 
 ## Toolkit Previews
 > [!NOTE]
