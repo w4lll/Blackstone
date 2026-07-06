@@ -1,0 +1,49 @@
+/* #############################################
+ * # Additional Blackstone styling starts here #
+ * ############################################# */
+
+/* I don't know where to put these lines when you have existing gtk.css,
+ * it's up to you. Maybe a separate file `@import url("");` will be better organized.
+ * I'm just lazy after all, just try it out by yourself! */
+
+/* Top panel configuration, uncomment to change the look a bit.
+ * Note that the panel is not optimized for vertical panels. */ /*
+.xfce4-panel.panel {
+  box-shadow: 0 -1px rgba(255, 255, 255, 0.25) inset; }
+  .xfce4-panel.panel button {
+    margin: 1px 1px 2px 1px; } */
+
+#whiskermenu-button,
+#applicationmenu-button {
+  padding: 0 20px 0 16px;
+  background-image: linear-gradient(to bottom, #606060, #000000);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  border: 1px solid #000000;
+  margin: -1px 0 0 -2px;
+  border-radius: 0 16px 16px 0;
+  transition: 500ms; }
+
+#whiskermenu-button:hover
+#applicationmenu-button:hover {
+  background-image: linear-gradient(to bottom, #808080, #202020); }
+
+#whiskermenu-button:active, #whiskermenu-button:checked,
+#applicationmenu-button:active, #applicationmenu-button:checked {
+  background-image: linear-gradient(to bottom, #707070, #101010); }
+
+#whiskermenu-window {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25) inset; }
+
+#whiskermenu-window.background {
+  background-image: linear-gradient(to bottom, #303030, #000000 87.5%, #202020); }
+
+#clock-button {
+  padding: 0 4px; }
+
+/* Reduce the grid on xfdesktop. */
+XfdesktopIconView.view {
+  -XfdesktopIconView-cell-spacing: 0;
+  -XfdesktopIconView-cell-padding: 5;
+  color: #ffffff; }
+
+/* End of blackstone configuration. */
