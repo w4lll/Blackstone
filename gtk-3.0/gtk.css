@@ -294,7 +294,7 @@ button {
     padding-right: 5px; }
   button.text-button {
     padding-left: 12px;
-    padding-right: 12px; }
+    padding-right: 12px; } /*
   button.text-button.image-button, headerbar button.text-button.titlebutton,
   .titlebar button.text-button.titlebutton {
     padding-left: 5px;
@@ -314,7 +314,7 @@ button {
     button.text-button.image-button.popup, headerbar button.text-button.popup.titlebutton,
     .titlebar button.text-button.popup.titlebutton {
       padding-right: 8px;
-      padding-left: 8px; }
+      padding-left: 8px; } */
   combobox:drop(active) button.combo, button:drop(active) {
     color: #ffffff;
     border-color: #000000;
@@ -1513,13 +1513,13 @@ menubar,
 menu,
 .menu {
   margin: 0px;
-  padding: 0;
+  padding: 2px;
   border-radius: 0;
   background-color: #181818;
   border: 1px solid #404040;
   /* box-shadow: 0 0 0 1px #000000; */ }
   .csd menu, .csd .menu {
-    padding: 2px 0px;
+    padding: 2px;
     border-radius: 0px;
     border: 1px solid transparent; }
   menu separator, .csd menu separator,
@@ -1534,12 +1534,12 @@ menu,
     min-height: 16px;
     min-width: 40px;
     padding: 3px 2px;
-    margin: 0 2px; }
+    margin: 0; }
     menu menuitem:hover,
     .menu menuitem:hover {
       color: #ffffff;
       background-image: linear-gradient(to bottom, #404040, #101010);
-      box-shadow: inset  0px  2px rgba(255, 255, 255, 0.1), inset  2px  0px rgba(255, 255, 255, 0.1), inset -2px  0px rgba(255, 255, 255, 0.1), inset  0px -2px rgba(255, 255, 255, 0.1), inset  0px  1px #000000, inset  1px  0px #000000, inset -1px  0px #000000, inset  0px -1px #000000;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1) inset, 0 0 0 1px #000000 inset;
       border-radius: 3px; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
@@ -1558,21 +1558,20 @@ menu,
         margin-right: 10px; }
     menuitem accelerator {
       color: alpha(currentColor,0.55); }
+    menu > menuitem label {
+      margin: 0 2px; }
     menuitem check, menuitem radio {
       min-height: 16px;
       min-width: 16px; }
-      menuitem check:dir(ltr), menuitem radio:dir(ltr) {
-        margin-right: 4px;
+      menuitem check, menuitem radio {
+        margin-right: 2px;
         margin-left: 2px; }
-      menuitem check:dir(rtl), menuitem radio:dir(rtl) {
-        margin-left: 2px;
-        margin-right: 4px; }
       menuitem image:dir(ltr) {
-        margin-left: 4px;
-        margin-right: -4px; }
+        margin-left: 2px;
+        margin-right: -2px; }
       menuitem image:dir(rtl) {
-        margin-left: -4px;
-        margin-right: 4px; }
+        margin-left: -2px;
+        margin-right: 2px; }
     menu menuitem label:dir(rtl), menu menuitem label:dir(ltr),
     .menu menuitem label:dir(rtl),
     .menu menuitem label:dir(ltr) {
@@ -1694,7 +1693,6 @@ notebook {
         border-radius: 3px 3px 0 0;
         background-image: linear-gradient(to bottom, #141414, #080808);
         color: rgba(255, 255, 255, 0.875);
-        margin-top: 2px;
         box-shadow: inset 0 1px #282828, inset 0 -1px #000000; }
         notebook > header.top > tabs > tab + tab {
           margin-left: -1px; }
@@ -1710,7 +1708,6 @@ notebook {
         border-radius: 0 0 3px 3px;
         background-image: linear-gradient(to top, #141414, #080808);
         color: rgba(255, 255, 255, 0.875);
-        margin-bottom: 2px;
         box-shadow: inset 0 1px #000000, inset 0 -1px #282828; }
         notebook > header.bottom > tabs > tab + tab {
           margin-left: -1px; }
@@ -1726,7 +1723,6 @@ notebook {
         border-radius: 0 3px 3px 0;
         background-image: linear-gradient(to left, #141414, #080808);
         color: rgba(255, 255, 255, 0.875);
-        margin-right: 2px;
         box-shadow: inset 1px 0 #000000, inset -1px 0 #282828; }
         notebook > header.right > tabs > tab + tab {
           margin-top: -1px; }
@@ -1742,7 +1738,6 @@ notebook {
         border-radius: 3px 0 0 3px;
         background-image: linear-gradient(to right, #141414, #080808);
         color: rgba(255, 255, 255, 0.875);
-        margin-left: 2px;
         box-shadow: inset 1px 0 #282828, inset -1px 0 #000000; }
         notebook > header.left > tabs > tab + tab {
           margin-top: -1px; }
@@ -1784,25 +1779,21 @@ notebook {
         color: #ffffff;
         background-image: linear-gradient(to bottom, #383838, #202020 90%);
         border-color: #000000;
-        margin-top: 0;
         box-shadow: inset 0 1px #585858; }
       notebook > header.bottom > tabs > tab:checked {
         color: #ffffff;
         background-image: linear-gradient(to top, #383838, #202020 90%);
         border-color: #000000;
-        margin-bottom: 0;
         box-shadow: inset 0 -1px #585858; }
       notebook > header.left > tabs > tab:checked {
         color: #ffffff;
         background-image: linear-gradient(to right, #383838, #202020 90%);
         border-color: #000000;
-        margin-left: 0;
         box-shadow: inset 1px 0 #585858; }
       notebook > header.right > tabs > tab:checked {
         color: #ffffff;
         background-image: linear-gradient(to left, #383838, #202020 90%);
         border-color: #000000;
-        margin-right: 0;
         box-shadow: inset -1px 0 #585858; }
       notebook > header > tabs > tab button.flat {
         min-height: 22px;
@@ -2166,10 +2157,10 @@ check,
 radio {
   min-width: 16px;
   min-height: 16px;
-  margin: 0 2px; }
+  margin: 0 2px; } /*
   check:only-child, menu menuitem check,
   radio:only-child, menu menuitem radio {
-    margin: 0; }
+    margin: 0; } */
 
 scale {
   min-height: 15px;
@@ -2853,7 +2844,7 @@ tooltip {
     background-image: linear-gradient(to bottom, #303030, #000000);
     background-clip: padding-box; }
     tooltip.background label {
-      padding: 6px 10px; }
+      padding: 0 2px; }
   tooltip decoration {
     background-color: transparent; }
   tooltip * {
@@ -3955,6 +3946,9 @@ EvWindow .content-view .view:focus:selected {
 
 .thunar toolbar button {
   padding: 3px; }
+/*
+.thunar toolbar button.location-button {
+  padding: 6px; } */
 
 /*
 #panel_window {
